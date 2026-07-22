@@ -2,5 +2,5 @@
 	"app_name": "sentinel-backend",
 	"stack": "python3.11",
 	"build_command": "pip install -r requirements.txt",
-	"start_command": "uvicorn app.main:app --host 0.0.0.0 --port 9000"
+	"start_command": "python run_server.py"
 }
