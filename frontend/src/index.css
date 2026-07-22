@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #09090b;
+  --color-foreground: #fafafa;
+  --color-primary: #e11d48;
+  --color-primary-foreground: #ffffff;
+  --color-card: #18181b;
+  --color-card-foreground: #fafafa;
+  --color-border: #27272a;
+  --color-destructive: #e11d48;
+  --color-warning: #d97706;
+  --color-success: #059669;
+  --color-accent: #27272a;
+  --color-muted: #27272a;
+  --color-muted-foreground: #a1a1aa;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Scrollbar for dense data panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+  border-left: 1px solid var(--color-border);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted-foreground);
+}
+
+/* Leaflet map overrides */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: var(--color-background) !important;
+  z-index: 10;
+}
+.leaflet-popup-content-wrapper {
+  background-color: var(--color-card);
+  color: var(--color-foreground);
+  border: 1px solid var(--color-border);
+  border-radius: 0.25rem;
+  box-shadow: none !important;
+}
+.leaflet-popup-tip {
+  background-color: var(--color-card);
+  border-top: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+}
+.leaflet-bar {
+  border: 1px solid var(--color-border) !important;
+  box-shadow: none !important;
+  border-radius: 0.25rem !important;
+  overflow: hidden;
+}
+.leaflet-bar a {
+  background-color: var(--color-card) !important;
+  color: var(--color-foreground) !important;
+  border-bottom: 1px solid var(--color-border) !important;
+}
+.leaflet-bar a:hover {
+  background-color: var(--color-accent) !important;
+}
+

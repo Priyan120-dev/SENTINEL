@@ -1,0 +1,50 @@
+# Databases & Binary Artifacts
+*.db
+*.sqlite
+*.sqlite3
+sentinel.db
+backend/sentinel.db
+backend/app/sentinel.db
+*.log
+
+# Dependencies & Virtual Environments
+node_modules/
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Build Outputs
+dist/
+build/
+.output/
+
+# Test & Simulation Scripts (As requested: do not push test files)
+backend/scripts/simulate_dispatch.py
+backend/scripts/simulate_edge_cases.py
+tests/
+*.test.*
+*.spec.*
+
+# Agent Metadata & Workspace Scratch Artifacts
+.agent/
+.agents/
+.impeccable/
+.gemini/
+scratch/
+ORIGINAL_REQUEST.md
+*.pdf
+
+# Environment & Credentials
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# IDE & System Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

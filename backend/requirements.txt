@@ -1,0 +1,13 @@
+fastapi==0.111.0
+uvicorn==0.29.0
+sqlalchemy==2.0.30
+pandas==2.2.2
+numpy==1.26.4
+faker==25.2.0
+scikit-learn==1.4.2
+networkx==3.3
+python-louvain==0.16
+statsmodels==0.14.2
+pydantic==2.7.1
+pydantic-settings==2.2.1
+websockets==12.0
